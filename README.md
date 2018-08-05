@@ -1,4 +1,4 @@
-# webpack-group∂
+# webpack-group
 
 介绍webpack相关的原理和知识
 
