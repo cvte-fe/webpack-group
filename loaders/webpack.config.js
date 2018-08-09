@@ -30,6 +30,10 @@ module.exports = {
         }
       },
       {
+        test: /\.tmt$/,
+        use: ['bar-loader', 'mid-loader', 'foo-loader']
+      },
+      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
       },
