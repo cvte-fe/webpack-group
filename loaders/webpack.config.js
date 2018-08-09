@@ -18,10 +18,17 @@ module.exports = {
     })
   ],
   resolveLoader: {
-    modules: [path.join(__dirname, './'), 'node_modules']
+    modules: [path.join(__dirname, './self-define-loaders/'), 'node_modules']
   },
   module: {
     rules: [
+      {
+        test: /\.txt$/,
+        loader: 'name-loader',
+        options: {
+          name: '1kg'
+        }
+      },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
@@ -29,10 +36,6 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: ['file-loader']
-      },
-      {
-        test: /\.miki$/,
-        use: ['miki-loader']
       }
     ]
   }
