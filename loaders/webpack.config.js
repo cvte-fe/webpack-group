@@ -30,6 +30,10 @@ module.exports = {
         }
       },
       {
+        test: /\.txt$/,
+        loader: 'sync-loader'
+      },
+      {
         test: /\.tmt$/,
         use: ['bar-loader', 'mid-loader', 'foo-loader']
       },
