@@ -39,7 +39,12 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ['file-loader']
+        use: [{
+          loader: 'self-file-loader',
+          options: {
+            name: 'demo.[hash:6].[ext]'
+          }
+        }]
       }
     ]
   }
