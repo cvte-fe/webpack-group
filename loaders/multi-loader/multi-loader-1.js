@@ -1,4 +1,4 @@
 module.exports = function(source) {
-  const handleSource = `midWrap{${source}}`;
+  const handleSource = `multi-loader-1:{${source}}`;
   return handleSource;
 };

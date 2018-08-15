@@ -17,26 +17,8 @@ module.exports = {
       title: 'Loader Example'
     })
   ],
-  resolveLoader: {
-    modules: [path.join(__dirname, './self-define-loaders/'), 'node_modules']
-  },
   module: {
     rules: [
-      {
-        test: /\.txt$/,
-        loader: 'name-loader',
-        options: {
-          name: '1kg'
-        }
-      },
-      {
-        test: /\.txt$/,
-        loader: 'sync-loader'
-      },
-      {
-        test: /\.tmt$/,
-        use: ['bar-loader', 'mid-loader', 'foo-loader']
-      },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
@@ -44,7 +26,7 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [{
-          loader: 'self-file-loader',
+          loader: 'file-loader',
           options: {
             name: 'demo.[hash:6].[ext]'
           }
