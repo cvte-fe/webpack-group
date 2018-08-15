@@ -1,4 +1,3 @@
-
 function bar() {
   return 7;
 }

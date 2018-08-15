@@ -243,7 +243,16 @@ function bundle(graph) {
   return result;
 }
 
-const graph = createGraph('./example/entry.js');
-const result = bundle(graph);
 
-console.log(result);
+function writeFile() {
+  ID = 0;
+  const graph = createGraph('./example/entry.js');
+  const result = bundle(graph);
+
+  if (!fs.existsSync('./dist')) {
+    fs.mkdirSync('./dist');
+  }
+  fs.writeFileSync(path.resolve('./dist', 'bundle.js'), result);
+}
+
+writeFile();
