@@ -12,6 +12,15 @@
 ## 我们要讲什么？怎么讲？
 ![Alt text](./image/all.png)
 
+## wepback流程
+![Alt text](./image/webpack-flow.png)
+
+## wepback基本打包原理
+![Alt text](./image/webpack-base.png)
+
+## loader执行流程
+![Alt text](./image/loader-pitch.png)
+
 ## 参考文档
 
 - [AST Explorer](https://astexplorer.net)
