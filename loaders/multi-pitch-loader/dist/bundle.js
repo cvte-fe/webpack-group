@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loa
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"multi-loader-3:{multi-loader-2:{Loader 1 Pitch}}\");\n\n//# sourceURL=webpack:///./loader-test.txt?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"multi-loader-3:{Loader 2 Pitch}\");\n\n//# sourceURL=webpack:///./loader-test.txt?");
 
 /***/ })
 
