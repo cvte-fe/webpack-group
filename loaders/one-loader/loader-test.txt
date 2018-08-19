@@ -1,1 +1,1 @@
-loader test -- by {{name}}
+hello {{name}}!

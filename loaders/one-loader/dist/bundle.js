@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loader_test_txt__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./loader-test.txt */ \"./loader-test.txt\");\n\n\nfunction component() {\n  const element = document.createElement('div');\n  const p = document.createElement('p');\n  p.innerHTML = 'One Loader' + _loader_test_txt__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  element.appendChild(p);\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loader_test_txt__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./loader-test.txt */ \"./loader-test.txt\");\n\n\nfunction component() {\n  const element = document.createElement('div');\n  const p = document.createElement('p');\n  p.innerHTML = 'One Loader: ' + _loader_test_txt__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  element.appendChild(p);\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loa
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"loader test -- by 1kg\");\n\n//# sourceURL=webpack:///./loader-test.txt?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"hello world!\");\n\n//# sourceURL=webpack:///./loader-test.txt?");
 
 /***/ })
 

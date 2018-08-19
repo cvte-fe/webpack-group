@@ -6,7 +6,7 @@ module.exports = function(source) {
 
 module.exports.pitch = function(remainingRequest, precedingRequest, data) {
   console.log('Pitch loader 1');
-  if (true) {
-    return 'Loader 1 Pitch';
-  }
+  // if (true) {
+  //   return 'Loader 1 Pitch';
+  // }
 };

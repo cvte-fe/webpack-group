@@ -22,7 +22,7 @@ module.exports = {
         test: /\.txt$/,
         loader: path.resolve(__dirname, 'name-loader.js'),
         options: {
-          name: '1kg'
+          name: 'world'
         }
       }
     ]
