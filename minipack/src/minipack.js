@@ -247,6 +247,7 @@ function bundle(graph) {
 function writeFile() {
   ID = 0;
   const graph = createGraph('./example/entry.js');
+  fs.writeFileSync(path.resolve('./dist', 'graph.js'), JSON.stringify(graph));
   const result = bundle(graph);
 
   if (!fs.existsSync('./dist')) {
