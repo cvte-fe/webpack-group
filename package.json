@@ -30,7 +30,10 @@
     "eslint": "^4.17.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "lodash": "^4.17.10"
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "lodash": "^4.17.10",
+    "sass-loader": "^7.1.0"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
@@ -45,7 +48,7 @@
     "loader-utils": "^1.1.0",
     "prettier": "^1.10.2",
     "schema-utils": "^0.4.5",
-    "style-loader": "^0.21.0",
+    "style-loader": "^0.22.1",
     "webpack": "^4.16.2",
     "webpack-cli": "^3.1.0",
     "webpack-dev-middleware": "^3.1.3",

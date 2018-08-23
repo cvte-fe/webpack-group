@@ -19,19 +19,29 @@ module.exports = {
   ],
   module: {
     rules: [
-      // {
-      //   test: /\.css$/,
-      //   use: ['style-loader', 'css-loader']
-      // },
+     
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: 'demo.[hash:6].[ext]'
+        use: [
+          path.resolve(__dirname, 'test-loader.js'),
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'demo.[hash:6].[ext]'
+            }
           }
-        }]
-      }
+        ]
+      },
+      {
+        test: /\.less$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          // path.resolve(__dirname, 'test-loader.js'),
+          'less-loader',
+          path.resolve(__dirname, 'test2-loader.js'),
+        ]
+      },
     ]
   }
 };

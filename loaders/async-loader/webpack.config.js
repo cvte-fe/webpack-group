@@ -5,6 +5,7 @@ const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
+  devtool: 'inline-source-map',
   entry: './index.js',
   output: {
     filename: 'bundle.js',
@@ -19,13 +20,34 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /test-1\.txt$/,
-        loader: path.resolve(__dirname, 'async-loader.js')
+        test: /\.less$/,
+        use: [
+          path.resolve(__dirname, 'style-loader.js'),
+          path.resolve(__dirname, 'css-loader.js'),
+          path.resolve(__dirname, 'less-loader.js')
+        ]
       },
-      {
-        test: /test-2\.txt$/,
-        loader: path.resolve(__dirname, 'sync-loader.js')
-      }
+      // {
+      //   test: /\.css$/,
+      //   use: ['style-loader', 'css-loader']
+      // },
+      // {
+      //   test: /\.less$/,
+      //   loader: 'less-loader'
+      // }
+
+      // {
+      //   test: /\.less$/,
+      //   use: [
+      //     path.resolve(__dirname, 'test-loader.js')
+      //   ]
+      // },
+      // {
+      //   test: /\.less$/,
+      //   use: [
+      //     path.resolve(__dirname, 'test2-loader.js')
+      //   ]
+      // },
     ]
   }
 };
